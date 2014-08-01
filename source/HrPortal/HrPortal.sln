@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HrPortal", "HrPortal\HrPortal.csproj", "{397F0809-6AC6-4AB2-9652-E1E2C151659B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{672B1460-9F6D-4BD1-98EC-EB7EB7F126ED} = {672B1460-9F6D-4BD1-98EC-EB7EB7F126ED}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HrPortal.Service", "HrPortal.Service\HrPortal.Service.csproj", "{672B1460-9F6D-4BD1-98EC-EB7EB7F126ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HrPortal.Views", "HrPortal.Views\HrPortal.Views.csproj", "{5CA28602-A19D-4851-B8A6-2E31BB25EC1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HrPortal.ViewModels", "HrPortal.ViewModels\HrPortal.ViewModels.csproj", "{42CCF435-3293-4A5E-A447-2B6CD2A540F9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{672B1460-9F6D-4BD1-98EC-EB7EB7F126ED} = {672B1460-9F6D-4BD1-98EC-EB7EB7F126ED}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HrPortal.Models", "HrPortal.Models\HrPortal.Models.csproj", "{288260C4-0630-4611-9075-4DFD61652C92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HrPortal.Service.Core", "HrPortal.Service.Core\HrPortal.Service.Core.csproj", "{55672F03-2389-4173-9023-ED8A2088EA24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HrPort.UI.Tests", "HrPort.UI.Tests\HrPort.UI.Tests.csproj", "{323C0AD9-7DA3-4B15-900E-83FA318CD15F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{397F0809-6AC6-4AB2-9652-E1E2C151659B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397F0809-6AC6-4AB2-9652-E1E2C151659B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397F0809-6AC6-4AB2-9652-E1E2C151659B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397F0809-6AC6-4AB2-9652-E1E2C151659B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{672B1460-9F6D-4BD1-98EC-EB7EB7F126ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{672B1460-9F6D-4BD1-98EC-EB7EB7F126ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{672B1460-9F6D-4BD1-98EC-EB7EB7F126ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{672B1460-9F6D-4BD1-98EC-EB7EB7F126ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CA28602-A19D-4851-B8A6-2E31BB25EC1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CA28602-A19D-4851-B8A6-2E31BB25EC1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CA28602-A19D-4851-B8A6-2E31BB25EC1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CA28602-A19D-4851-B8A6-2E31BB25EC1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42CCF435-3293-4A5E-A447-2B6CD2A540F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42CCF435-3293-4A5E-A447-2B6CD2A540F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42CCF435-3293-4A5E-A447-2B6CD2A540F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42CCF435-3293-4A5E-A447-2B6CD2A540F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{288260C4-0630-4611-9075-4DFD61652C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288260C4-0630-4611-9075-4DFD61652C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288260C4-0630-4611-9075-4DFD61652C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288260C4-0630-4611-9075-4DFD61652C92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55672F03-2389-4173-9023-ED8A2088EA24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55672F03-2389-4173-9023-ED8A2088EA24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55672F03-2389-4173-9023-ED8A2088EA24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55672F03-2389-4173-9023-ED8A2088EA24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{323C0AD9-7DA3-4B15-900E-83FA318CD15F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{323C0AD9-7DA3-4B15-900E-83FA318CD15F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{323C0AD9-7DA3-4B15-900E-83FA318CD15F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{323C0AD9-7DA3-4B15-900E-83FA318CD15F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

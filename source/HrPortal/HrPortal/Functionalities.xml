@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfFunctionModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FunctionModel>
+    <Title>下载中心</Title>
+    <ImageName>Image</ImageName>
+    <Url>/HrPortal.Views;component/DownloadView.xaml</Url>
+    <NeedLogin>true</NeedLogin>
+  </FunctionModel>
+  <FunctionModel>
+    <Title>问题中心</Title>
+    <ImageName>Image</ImageName>
+    <Url>/HrPortal.Views;component/RequirementView.xaml</Url>
+    <NeedLogin>true</NeedLogin>
+  </FunctionModel>
+  <FunctionModel>
+    <Title>修改密码</Title>
+    <ImageName>Image</ImageName>
+    <Url>/HrPortal.Views;component/PasswordChangeView.xaml</Url>
+    <NeedLogin>true</NeedLogin>
+  </FunctionModel>
+  <FunctionModel>
+    <Title>关于</Title>
+    <ImageName>Image</ImageName>
+    <Url>/HrPortal.Views;component/AboutView.xaml</Url>
+    <NeedLogin>false</NeedLogin>
+  </FunctionModel>
+  <FunctionModel>
+    <Title>登录系统</Title>
+    <ImageName>Image</ImageName>
+    <Url>/HrPortal.Views;component/LoginView.xaml</Url>
+    <NeedLogin>false</NeedLogin>
+  </FunctionModel>
+</ArrayOfFunctionModel>

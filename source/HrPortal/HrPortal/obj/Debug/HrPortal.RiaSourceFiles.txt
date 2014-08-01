@@ -1,0 +1,2 @@
+C:\Users\ESU\Documents\Esu\HrPortal\source\HrPortal\HrPortal.Service\HrPortal.Service.csproj,635425014166429817,Properties\AssemblyInfo.cs,ReadService.svc.cs,
+C:\Users\ESU\Documents\Esu\HrPortal\source\HrPortal\HrPortal.Service.Core\HrPortal.Service.Core.csproj,635425022177868046,Entities\Parameters\AppType.cs,Entities\Parameters\Category.cs,Entities\Comment.cs,Entities\Link.cs,Entities\Parameters\Priority.cs,Entities\Parameters\Status.cs,Properties\AssemblyInfo.cs,Entities\Requirement.cs,Globals.cs,Storages\LinkStorage.cs,Storages\RequirementStorage.cs,

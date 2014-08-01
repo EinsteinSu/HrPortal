@@ -1,0 +1,60 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="clr-namespace:Supeng.Silverlight.Controls.Views;assembly=Supeng.Silverlight.Controls"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" x:Class="HrPortal.Views.HomeView"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="{Binding AppName}" FontSize="18" FontWeight="Bold" />
+            <TextBlock VerticalAlignment="Center" Grid.Column="1" Text="{Binding CurrentUser.DisplayName}"
+                       HorizontalAlignment="Right" />
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <dxe:ListBoxEdit HorizontalContentAlignment="Stretch" ItemsSource="{Binding FunctionCollection}">
+                <dxe:ListBoxEdit.ItemTemplate>
+                    <DataTemplate>
+                        <Button CommandParameter="{Binding}" Command="{Binding ClickAction}" Margin="5">
+                            <StackPanel>
+                                <Image Height="32" Source="{Binding ImageName}"/>
+                                <TextBlock Text="{Binding Title}"/>
+                            </StackPanel>
+                        </Button>
+                    </DataTemplate>
+                </dxe:ListBoxEdit.ItemTemplate>
+            </dxe:ListBoxEdit>
+            <sdk:Frame Grid.Column="1" Source="{Binding CurrentUrl}" Navigated="Frame_OnNavigated"/>
+        </Grid>
+        <Grid Grid.Row="2" Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <views:EsuProgressView Width="200" DataContext="{Binding Progress}" HorizontalAlignment="Left"/>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Text="{Binding CurrentUser.Name}" Width="100"/>
+                <TextBlock Text="{Binding CurrentUser.Zy}" Width="100"/>
+                <TextBlock Text="{Binding CurrentUser.Zy}" Width="200"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

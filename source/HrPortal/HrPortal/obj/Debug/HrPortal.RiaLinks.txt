@@ -1,0 +1,2 @@
+C:\Users\ESU\Documents\Esu\HrPortal\source\HrPortal\HrPortal.ViewModels\HrPortal.ViewModels.csproj,635425069559830610,
+C:\Users\ESU\Documents\Esu\HrPortal\source\HrPortal\HrPortal.Views\HrPortal.Views.csproj,635425078404301454,

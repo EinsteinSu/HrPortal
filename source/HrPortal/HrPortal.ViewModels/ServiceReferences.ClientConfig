@@ -1,0 +1,16 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="readEndPoint" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="../ReadService.svc" binding="basicHttpBinding"
+                bindingConfiguration="readEndPoint" contract="ReadService.IReadService"
+                name="readEndPoint" />
+        </client>
+    </system.serviceModel>
+</configuration>
