@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using HrPortal.Service.Core.Entities.Parameters;
 using Supeng.Common.DataOperations;
 using Supeng.Common.Entities;
@@ -16,11 +17,46 @@ namespace HrPortal.Service.Core.Entities
     private string createUserID;
     private string createUserName;
     private int id1;
+    private string number;
     private Priority priority;
     private bool risk;
     private Status status;
     private string subject;
     private int workload;
+    private DateTime updateTime;
+
+    public string Number
+    {
+      get { return number; }
+      set
+      {
+        if (value == number) return;
+        number = value;
+        NotifyOfPropertyChange(() => Number);
+      }
+    }
+
+    public DateTime UpdateTime
+    {
+      get { return updateTime; }
+      set
+      {
+        if (value.Equals(updateTime)) return;
+        updateTime = value;
+        NotifyOfPropertyChange(() => UpdateTime);
+      }
+    }
+
+    public List<Comment> Comments
+    {
+      get { return comments; }
+      set
+      {
+        if (Equals(value, comments)) return;
+        comments = value;
+        NotifyOfPropertyChange(() => Comments);
+      }
+    }
 
     #region properties
 
@@ -135,17 +171,6 @@ namespace HrPortal.Service.Core.Entities
     }
 
     #endregion
-
-    public List<Comment> Comments
-    {
-      get { return comments; }
-      set
-      {
-        if (Equals(value, comments)) return;
-        comments = value;
-        NotifyOfPropertyChange(() => Comments);
-      }
-    }
   }
 
   public sealed class RequirementCreator : IDataCreator<Requirement>
@@ -154,6 +179,7 @@ namespace HrPortal.Service.Core.Entities
     {
       var data = new Requirement();
       data.Id = reader["id"].ToString().ConvertData<int>();
+      data.Number = reader["num"].ToString();
       data.Category = (Category) reader["category"].ToString().ConvertData<int>();
       data.Subject = reader["subject"].ToString();
       data.Description = reader["description"].ToString();
@@ -163,8 +189,45 @@ namespace HrPortal.Service.Core.Entities
       data.Workload = reader["workload"].ToString().ConvertData<int>();
       data.CreateUserID = reader["createuserid"].ToString();
       data.CreateUserName = reader["createUserName"].ToString();
+      data.UpdateTime = reader["updateTime"].ToString().ConvertToDateTime();
       data.App = (AppType) reader["app"].ToString().ConvertData<int>();
       return data;
+    }
+  }
+
+  public sealed class RequirementSave : IDataSave<Requirement>
+  {
+    public IDataParameter[] MappingParameters(Requirement data)
+    {
+      var parameters = new IDataParameter[10];
+      parameters[0] = new SqlParameter("@category", data.Category);
+      parameters[1] = new SqlParameter("@subject", data.Subject);
+      parameters[2] = new SqlParameter("@description", data.Description);
+      parameters[3] = new SqlParameter("@priority", data.Priority);
+      parameters[4] = new SqlParameter("@risk", data.Risk);
+      parameters[5] = new SqlParameter("@status", data.Status);
+      parameters[6] = new SqlParameter("@workload", data.Workload);
+      parameters[7] = new SqlParameter("@createuserid", data.CreateUserID);
+      parameters[8] = new SqlParameter("@app", data.App);
+      parameters[9] = new SqlParameter("@id", data.Id);
+      return parameters;
+    }
+
+    public string InsertSqlScript()
+    {
+      return
+        "Insert into Issue(category,subject,description,priority,risk,status,workload,createuserid,app,updatetime) values(@category,@subject,@description,@priority,@risk,@status,@workload,@createuserid,@app,getdate())";
+    }
+
+    public string UpdateSqlScript()
+    {
+      return
+        "Update Issue set category = @category,subject = @subject,description = @description,priority = @priority,risk = @risk,status = @status,workload = @workload,app = @app,updatetime = getdate() Where ID = @id";
+    }
+
+    public string DeleteSqlScript()
+    {
+      return "Delete from Issue Where ID = @id";
     }
   }
 }

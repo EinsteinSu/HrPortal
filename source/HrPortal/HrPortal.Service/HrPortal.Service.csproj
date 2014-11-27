@@ -56,6 +56,9 @@
     <Reference Include="Supeng.Data.Sql">
       <HintPath>..\..\..\..\EsuCommon\Build Dlls For Windows\Supeng.Data.Sql.dll</HintPath>
     </Reference>
+    <Reference Include="Supeng.Email">
+      <HintPath>..\..\..\..\EsuCommon\Build Dlls For Windows\Supeng.Email.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
@@ -81,15 +84,22 @@
     <Content Include="HrPortalTestPage.html" />
     <Content Include="ReadService.svc" />
     <Content Include="Silverlight.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WriteService.svc" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReadService.svc.cs">
       <DependentUpon>ReadService.svc</DependentUpon>
     </Compile>
+    <Compile Include="WriteService.svc.cs">
+      <DependentUpon>WriteService.svc</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\Release.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -102,6 +112,9 @@
       <Project>{55672f03-2389-4173-9023-ed8a2088ea24}</Project>
       <Name>HrPortal.Service.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Updates\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -116,7 +129,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>50558</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:26398/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

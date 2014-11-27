@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=6617DCC64EFF49E199907BB856900214/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=6617DCC64EFF49E199907BB856900214/BuildPolicy/@EntryValue">Always</s:String>
+	
+	
+	
+	
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=6617DCC64EFF49E199907BB856900214/Name/@EntryValue">TestStorage</s:String>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=6617DCC64EFF49E199907BB856900214/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;Elements&gt;&lt;UnitTestElement Provider="MSTest" Id="MsTest:Supeng.HrPortal.Service.Tests.UnitTest1" type="MsTestTestClassElement" TypeName="Supeng.HrPortal.Service.Tests.UnitTest1" Project="CF351E4B-33E1-4DA5-A31C-D9FFF35C500D" /&gt;&lt;UnitTestElement Provider="MSTest" Id="MsTest:Supeng.HrPortal.Service.Tests.UnitTest1.TestStorage" ParentId="MsTest:Supeng.HrPortal.Service.Tests.UnitTest1" type="MsTestTestMethodElement" MethodName="TestStorage" TypeName="Supeng.HrPortal.Service.Tests.UnitTest1" Project="CF351E4B-33E1-4DA5-A31C-D9FFF35C500D" /&gt;&lt;/Elements&gt;&lt;/Session&gt;</s:String></wpf:ResourceDictionary>

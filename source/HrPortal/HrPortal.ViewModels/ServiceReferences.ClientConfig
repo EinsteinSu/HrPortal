@@ -1,16 +1,22 @@
 ﻿<configuration>
-    <system.serviceModel>
-        <bindings>
-            <basicHttpBinding>
-                <binding name="readEndPoint" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
-                    <security mode="None" />
-                </binding>
-            </basicHttpBinding>
-        </bindings>
-        <client>
-            <endpoint address="../ReadService.svc" binding="basicHttpBinding"
+  <system.serviceModel>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="readEndPoint" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+        <binding name="writeEndPoint" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+    <client>
+      <endpoint address="../ReadService.svc" binding="basicHttpBinding"
                 bindingConfiguration="readEndPoint" contract="ReadService.IReadService"
                 name="readEndPoint" />
-        </client>
-    </system.serviceModel>
+      <endpoint address="../WriteService.svc" binding="basicHttpBinding"
+                bindingConfiguration="writeEndPoint" contract="WriteService.IWriteService"
+                name="writeEndPoint" />
+    </client>
+  </system.serviceModel>
 </configuration>

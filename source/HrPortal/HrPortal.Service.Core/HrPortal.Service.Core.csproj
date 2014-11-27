@@ -46,6 +46,7 @@
       <HintPath>..\..\..\..\EsuCommon\Build Dlls For Windows\Supeng.Data.Sql.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -54,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\EnterpriseUser.cs" />
     <Compile Include="Entities\Parameters\AppType.cs" />
     <Compile Include="Entities\Parameters\Category.cs" />
     <Compile Include="Entities\Comment.cs" />
@@ -67,6 +69,7 @@
     <Compile Include="Storages\LinkStorage.cs" />
     <Compile Include="Storages\RequirementStorage.cs" />
     <Compile Include="Storages\SecurityStorage.cs" />
+    <Compile Include="Storages\UserStorage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

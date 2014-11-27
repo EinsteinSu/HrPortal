@@ -1,9 +1,10 @@
-namespace HrPortal.Service.Core.Entities.Parameters
+﻿namespace HrPortal.Service.Core.Entities.Parameters
 {
   public enum Priority
   {
-    High,
-    Medium,
-    Low
+    低,
+    中,
+    高,
+    紧急,
   }
 }

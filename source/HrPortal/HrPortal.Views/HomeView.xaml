@@ -6,9 +6,9 @@
     xmlns:views="clr-namespace:Supeng.Silverlight.Controls.Views;assembly=Supeng.Silverlight.Controls"
     xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
     xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
-    xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" x:Class="HrPortal.Views.HomeView"
+    x:Class="HrPortal.Views.HomeView" FontSize="12" 
     mc:Ignorable="d"
-    d:DesignHeight="300" d:DesignWidth="400">
+    d:DesignHeight="300" d:DesignWidth="400" FontFamily="Microsoft YaHei">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -21,9 +21,10 @@
                 <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <TextBlock Text="{Binding AppName}" FontSize="18" FontWeight="Bold" />
-            <TextBlock VerticalAlignment="Center" Grid.Column="1" Text="{Binding CurrentUser.DisplayName}"
-                       HorizontalAlignment="Right" />
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Image Source="/HrPortal;component/Logo.png" Height="32" Width="32" HorizontalAlignment="Left" />
+                <TextBlock Text="{Binding AppName}" FontSize="24" FontWeight="Bold" />
+            </StackPanel>
         </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -35,25 +36,23 @@
                     <DataTemplate>
                         <Button CommandParameter="{Binding}" Command="{Binding ClickAction}" Margin="5">
                             <StackPanel>
-                                <Image Height="32" Source="{Binding ImageName}"/>
-                                <TextBlock Text="{Binding Title}"/>
+                                <Image Height="32" Source="{Binding ImageName}" />
+                                <TextBlock Text="{Binding Title}" />
                             </StackPanel>
                         </Button>
                     </DataTemplate>
                 </dxe:ListBoxEdit.ItemTemplate>
             </dxe:ListBoxEdit>
-            <sdk:Frame Grid.Column="1" Source="{Binding CurrentUrl}" Navigated="Frame_OnNavigated"/>
+            <sdk:Frame Grid.Column="1" Source="{Binding CurrentUrl}" Navigated="Frame_OnNavigated" />
         </Grid>
         <Grid Grid.Row="2" Margin="5">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition />
+                <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <views:EsuProgressView Width="200" DataContext="{Binding Progress}" HorizontalAlignment="Left"/>
+            <views:EsuProgressView Width="200" DataContext="{Binding Progress}" HorizontalAlignment="Left" />
             <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
-                <TextBlock Text="{Binding CurrentUser.Name}" Width="100"/>
-                <TextBlock Text="{Binding CurrentUser.Zy}" Width="100"/>
-                <TextBlock Text="{Binding CurrentUser.Zy}" Width="200"/>
+                <TextBlock Text="{Binding CurrentUser.Name}" Width="100" />
             </StackPanel>
         </Grid>
     </Grid>

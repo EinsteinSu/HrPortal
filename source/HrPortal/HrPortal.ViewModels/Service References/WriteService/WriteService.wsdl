@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WriteService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:26398/WriteService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:26398/WriteService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWriteService_UpdateEnterpriseUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEnterpriseUser" />
+  </wsdl:message>
+  <wsdl:message name="IWriteService_UpdateEnterpriseUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEnterpriseUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWriteService_InsertRequirement_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRequirement" />
+  </wsdl:message>
+  <wsdl:message name="IWriteService_InsertRequirement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRequirementResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWriteService_UpdateRequirement_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRequirement" />
+  </wsdl:message>
+  <wsdl:message name="IWriteService_UpdateRequirement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRequirementResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWriteService_DeleteRequirement_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRequirement" />
+  </wsdl:message>
+  <wsdl:message name="IWriteService_DeleteRequirement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRequirementResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWriteService_PasswordChange_InputMessage">
+    <wsdl:part name="parameters" element="tns:PasswordChange" />
+  </wsdl:message>
+  <wsdl:message name="IWriteService_PasswordChange_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PasswordChangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWriteService_InsertComment_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertComment" />
+  </wsdl:message>
+  <wsdl:message name="IWriteService_InsertComment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCommentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWriteService_UpdateComment_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateComment" />
+  </wsdl:message>
+  <wsdl:message name="IWriteService_UpdateComment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCommentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWriteService_DeleteComment_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteComment" />
+  </wsdl:message>
+  <wsdl:message name="IWriteService_DeleteComment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCommentResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWriteService">
+    <wsdl:operation name="UpdateEnterpriseUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWriteService/UpdateEnterpriseUser" message="tns:IWriteService_UpdateEnterpriseUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWriteService/UpdateEnterpriseUserResponse" message="tns:IWriteService_UpdateEnterpriseUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRequirement">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWriteService/InsertRequirement" message="tns:IWriteService_InsertRequirement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWriteService/InsertRequirementResponse" message="tns:IWriteService_InsertRequirement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRequirement">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWriteService/UpdateRequirement" message="tns:IWriteService_UpdateRequirement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWriteService/UpdateRequirementResponse" message="tns:IWriteService_UpdateRequirement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRequirement">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWriteService/DeleteRequirement" message="tns:IWriteService_DeleteRequirement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWriteService/DeleteRequirementResponse" message="tns:IWriteService_DeleteRequirement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PasswordChange">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWriteService/PasswordChange" message="tns:IWriteService_PasswordChange_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWriteService/PasswordChangeResponse" message="tns:IWriteService_PasswordChange_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertComment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWriteService/InsertComment" message="tns:IWriteService_InsertComment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWriteService/InsertCommentResponse" message="tns:IWriteService_InsertComment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateComment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWriteService/UpdateComment" message="tns:IWriteService_UpdateComment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWriteService/UpdateCommentResponse" message="tns:IWriteService_UpdateComment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteComment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWriteService/DeleteComment" message="tns:IWriteService_DeleteComment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWriteService/DeleteCommentResponse" message="tns:IWriteService_DeleteComment_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="writeEndPoint" type="tns:IWriteService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateEnterpriseUser">
+      <soap:operation soapAction="http://tempuri.org/IWriteService/UpdateEnterpriseUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRequirement">
+      <soap:operation soapAction="http://tempuri.org/IWriteService/InsertRequirement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRequirement">
+      <soap:operation soapAction="http://tempuri.org/IWriteService/UpdateRequirement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRequirement">
+      <soap:operation soapAction="http://tempuri.org/IWriteService/DeleteRequirement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PasswordChange">
+      <soap:operation soapAction="http://tempuri.org/IWriteService/PasswordChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertComment">
+      <soap:operation soapAction="http://tempuri.org/IWriteService/InsertComment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateComment">
+      <soap:operation soapAction="http://tempuri.org/IWriteService/UpdateComment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteComment">
+      <soap:operation soapAction="http://tempuri.org/IWriteService/DeleteComment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WriteService">
+    <wsdl:port name="writeEndPoint" binding="tns:writeEndPoint">
+      <soap:address location="http://localhost:26398/WriteService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -60,6 +60,7 @@
     <Reference Include="Supeng.Silverlight.Controls">
       <HintPath>..\..\..\..\EsuCommon\Build Dlls For SL\Supeng.Silverlight.Controls.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=5.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217, processorArchitecture=MSIL" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Windows" />
@@ -73,9 +74,16 @@
     <Reference Include="System.Windows.Browser" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutViewModel.cs" />
     <Compile Include="DownloadViewModel.cs" />
+    <Compile Include="EidtWindows\CommentEditWindow.cs" />
+    <Compile Include="EidtWindows\RequirementEditViewModel.cs" />
+    <Compile Include="EidtWindows\RequirementProcessEditViewModel.cs" />
+    <Compile Include="Globals.cs" />
     <Compile Include="HomeViewModel.cs" />
     <Compile Include="LoginViewModel.cs" />
+    <Compile Include="PasswordChangeViewModel.cs" />
+    <Compile Include="RequirementCrud.cs" />
     <Compile Include="RequirementViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\ReadService\Reference.cs">
@@ -83,6 +91,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\WriteService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoUpdateViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -95,10 +109,25 @@
     <None Include="Service References\ReadService\ReadService1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\WriteService\WriteService.disco" />
+    <None Include="Service References\WriteService\configuration91.svcinfo" />
+    <None Include="Service References\WriteService\configuration.svcinfo" />
+    <None Include="Service References\WriteService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="ServiceReferences.ClientConfig" />
+    <None Include="Service References\WriteService\WriteService.wsdl" />
+    <None Include="Service References\WriteService\WriteService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WriteService\WriteService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ReadService\" />
+    <WCFMetadataStorage Include="Service References\WriteService\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ReadService\ReadService.disco" />

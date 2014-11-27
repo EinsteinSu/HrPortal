@@ -8,6 +8,8 @@
     <AssemblyPart x:Name="DevExpress.Xpf.Charts.v12.1" Source="DevExpress.Xpf.Charts.v12.1.dll" />
     <AssemblyPart x:Name="DevExpress.Xpf.Core.v12.1" Source="DevExpress.Xpf.Core.v12.1.dll" />
     <AssemblyPart x:Name="DevExpress.Xpf.Docking.v12.1" Source="DevExpress.Xpf.Docking.v12.1.dll" />
+    <AssemblyPart x:Name="DevExpress.Xpf.Grid.v12.1.Core" Source="DevExpress.Xpf.Grid.v12.1.Core.dll" />
+    <AssemblyPart x:Name="devexpress.xpf.grid.v12.1" Source="devexpress.xpf.grid.v12.1.dll" />
     <AssemblyPart x:Name="DevExpress.Xpf.Layout.v12.1.Core" Source="DevExpress.Xpf.Layout.v12.1.Core.dll" />
     <AssemblyPart x:Name="devexpress.xpf.layoutcontrol.v12.1" Source="devexpress.xpf.layoutcontrol.v12.1.dll" />
     <AssemblyPart x:Name="DevExpress.Xpf.Themes.Office2010Black.v12.1" Source="DevExpress.Xpf.Themes.Office2010Black.v12.1.dll" />
@@ -17,16 +19,16 @@
     <AssemblyPart x:Name="Supeng.Silverlight.Common" Source="Supeng.Silverlight.Common.dll" />
     <AssemblyPart x:Name="Supeng.Silverlight.Controls" Source="Supeng.Silverlight.Controls.dll" />
     <AssemblyPart x:Name="System.ComponentModel.DataAnnotations" Source="System.ComponentModel.DataAnnotations.dll" />
+    <AssemblyPart x:Name="System.Data.Services.Client" Source="System.Data.Services.Client.dll" />
     <AssemblyPart x:Name="System.ServiceModel.DomainServices.Client" Source="System.ServiceModel.DomainServices.Client.dll" />
     <AssemblyPart x:Name="System.ServiceModel.DomainServices.Client.Web" Source="System.ServiceModel.DomainServices.Client.Web.dll" />
     <AssemblyPart x:Name="System.ServiceModel.Web.Extensions" Source="System.ServiceModel.Web.Extensions.dll" />
     <AssemblyPart x:Name="System.Windows.Controls.Navigation" Source="System.Windows.Controls.Navigation.dll" />
+    <AssemblyPart x:Name="System.Windows.Data" Source="System.Windows.Data.dll" />
+    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
+    <AssemblyPart x:Name="System.Xml.Serialization" Source="System.Xml.Serialization.dll" />
     <AssemblyPart x:Name="HrPortal.Models" Source="HrPortal.Models.dll" />
     <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
     <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
-    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
-    <AssemblyPart x:Name="System.Data.Services.Client" Source="System.Data.Services.Client.dll" />
-    <AssemblyPart x:Name="System.Windows.Data" Source="System.Windows.Data.dll" />
-    <AssemblyPart x:Name="System.Xml.Serialization" Source="System.Xml.Serialization.dll" />
   </Deployment.Parts>
 </Deployment>

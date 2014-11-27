@@ -1,11 +1,10 @@
-namespace HrPortal.Service.Core.Entities.Parameters
+﻿namespace HrPortal.Service.Core.Entities.Parameters
 {
   public enum Status
   {
-    Create,
-    Accept,
-    Processing,
-    Done,
-    All
+    新建,
+    接受,
+    处理中,
+    完成
   }
 }

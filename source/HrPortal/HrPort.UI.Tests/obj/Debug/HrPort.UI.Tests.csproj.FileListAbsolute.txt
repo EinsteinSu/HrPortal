@@ -10,3 +10,15 @@ C:\Users\ESU\Documents\Esu\HrPortal\source\HrPortal\HrPort.UI.Tests\obj\Debug\Hr
 C:\Users\ESU\Documents\Esu\HrPortal\source\HrPortal\HrPort.UI.Tests\obj\Debug\HrPort.UI.Tests.dll
 C:\Users\ESU\Documents\Esu\HrPortal\source\HrPortal\HrPort.UI.Tests\obj\Debug\HrPort.UI.Tests.pdb
 C:\Users\ESU\Documents\Esu\HrPortal\source\HrPortal\HrPort.UI.Tests\obj\Debug\XapCacheFile.xml
+C:\Users\Einstein\Desktop\HrPortal\source\HrPortal\HrPort.UI.Tests\Bin\Debug\HrPort.UI.Tests.dll
+C:\Users\Einstein\Desktop\HrPortal\source\HrPortal\HrPort.UI.Tests\Bin\Debug\HrPort.UI.Tests.pdb
+C:\Users\Einstein\Desktop\HrPortal\source\HrPortal\HrPort.UI.Tests\Bin\Debug\AppManifest.xaml
+C:\Users\Einstein\Desktop\HrPortal\source\HrPortal\HrPort.UI.Tests\Bin\Debug\HrPort.UI.Tests.xap
+C:\Users\Einstein\Desktop\HrPortal\source\HrPortal\HrPort.UI.Tests\Bin\Debug\HrPort.UI.TestsTestPage.html
+C:\Users\Einstein\Desktop\HrPortal\source\HrPortal\HrPort.UI.Tests\obj\Debug\App.g.cs
+C:\Users\Einstein\Desktop\HrPortal\source\HrPortal\HrPort.UI.Tests\obj\Debug\MainPage.g.cs
+C:\Users\Einstein\Desktop\HrPortal\source\HrPortal\HrPort.UI.Tests\obj\Debug\HrPort.UI.Tests.g.resources
+C:\Users\Einstein\Desktop\HrPortal\source\HrPortal\HrPort.UI.Tests\obj\Debug\HrPort.UI.Tests.dll
+C:\Users\Einstein\Desktop\HrPortal\source\HrPortal\HrPort.UI.Tests\obj\Debug\HrPort.UI.Tests.pdb
+C:\Users\Einstein\Desktop\HrPortal\source\HrPortal\HrPort.UI.Tests\obj\Debug\XapCacheFile.xml
+C:\Users\Einstein\Desktop\HrPortal\source\HrPortal\HrPort.UI.Tests\obj\Debug\HrPort.UI.Tests.csprojResolveAssemblyReference.cache

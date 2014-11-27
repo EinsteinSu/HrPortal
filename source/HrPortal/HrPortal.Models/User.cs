@@ -2,7 +2,7 @@
 
 namespace HrPortal.Models
 {
-  public class User:EsuInfoBase
+  public class User : EsuInfoBase
   {
     private string name;
 

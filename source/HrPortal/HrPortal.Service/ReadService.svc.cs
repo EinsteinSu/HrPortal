@@ -7,6 +7,9 @@ namespace HrPortal.Service
   public interface IReadService
   {
     [OperationContract]
+    string GetEnterpriseUserJson(string userID);
+
+    [OperationContract]
     string GetRequirements(int status);
 
     [OperationContract]
@@ -14,10 +17,19 @@ namespace HrPortal.Service
 
     [OperationContract]
     string GetDownloads();
+
+    [OperationContract]
+    string GetComments(int issueID);
   }
 
   public class ReadService : IReadService
   {
+    public string GetEnterpriseUserJson(string userID)
+    {
+      var storage = new UserStorage();
+      return storage.GetEnterpriseUser(userID).ToString();
+    }
+
     public string GetRequirements(int status)
     {
       var storage = new RequirementStorage();
@@ -34,6 +46,12 @@ namespace HrPortal.Service
     {
       var storage = new LinkStorage();
       return storage.GetLinks().ToString();
+    }
+
+    public string GetComments(int issueID)
+    {
+      var storage = new RequirementStorage();
+      return storage.GetComments(issueID).ToString();
     }
   }
 }

@@ -14,7 +14,6 @@ namespace HrPortal.ViewModels
 
     public LoginViewModel()
     {
-
     }
 
     public LoginViewModel(Action<bool> loginDone)
@@ -25,7 +24,7 @@ namespace HrPortal.ViewModels
 
     public string Title
     {
-      get { return "登录"; }
+      get { return HomeViewModel.Instance.AppName + "登录"; }
     }
 
     protected override void Login()
@@ -36,7 +35,7 @@ namespace HrPortal.ViewModels
       IReadService service = new WcfClientAddressBase<ReadServiceClient>("../ReadService.svc").GetService();
       service.BeginLogin(UserName, Password, ThreadHelper.SyncContextCallback(ar =>
       {
-        var data = service.EndLogin(ar);
+        string data = service.EndLogin(ar);
         bool result = !string.IsNullOrEmpty(data);
         if (result)
         {

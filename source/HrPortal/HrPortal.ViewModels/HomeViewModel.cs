@@ -16,9 +16,12 @@ namespace HrPortal.ViewModels
 {
   public class HomeViewModel : EsuInfoBase
   {
-    private Dictionary<string, Type> childViewTypes;
+    private static HomeViewModel instance;
     private readonly EsuProgressViewModel progress;
+    private Dictionary<string, Type> childViewTypes;
+    private User currentUser;
     private EsuInfoCollection<FunctionModel> functionCollection;
+    private FunctionModel originalModel;
 
     private HomeViewModel()
     {
@@ -41,8 +44,6 @@ namespace HrPortal.ViewModels
         NotifyOfPropertyChange(() => ChildViewTypes);
       }
     }
-
-    private static HomeViewModel instance;
 
     public static HomeViewModel Instance
     {
@@ -77,10 +78,9 @@ namespace HrPortal.ViewModels
 
     public string AppName
     {
-      get { return "Test Application"; }
+      get { return "恒锐消防咨询信息管理门户系统"; }
     }
 
-    private User currentUser;
     public User CurrentUser
     {
       get { return currentUser; }
@@ -108,15 +108,14 @@ namespace HrPortal.ViewModels
 
     private void TurnToPage(string url)
     {
-      var first = functionCollection.FirstOrDefault(f => f.Url.Equals(url, StringComparison.InvariantCultureIgnoreCase));
+      FunctionModel first =
+        functionCollection.FirstOrDefault(f => f.Url.Equals(url, StringComparison.InvariantCultureIgnoreCase));
       if (first != null)
       {
         functionCollection.CurrentItem = first;
         NotifyOfPropertyChange(() => CurrentUrl);
       }
     }
-
-    private FunctionModel originalModel;
 
     protected virtual void FunctionClick(FunctionModel model)
     {
@@ -150,6 +149,18 @@ namespace HrPortal.ViewModels
           break;
         case "下载中心":
           page.DataContext = new DownloadViewModel();
+          break;
+        case "问题中心":
+          page.DataContext = new RequirementViewModel();
+          break;
+        case "修改密码":
+          page.DataContext = new PasswordChangeViewModel();
+          break;
+        case "个人资料":
+          page.DataContext = new UserInfoUpdateViewModel();
+          break;
+        case "关于":
+          page.DataContext = new AboutViewModel();
           break;
       }
       if (page.DataContext != null)

@@ -7,6 +7,7 @@ namespace HrPortal.Service.Core.Entities
   public class User : EsuInfoBase
   {
     private string name;
+    private string email;
 
     public string Name
     {
@@ -18,6 +19,17 @@ namespace HrPortal.Service.Core.Entities
         NotifyOfPropertyChange(() => Name);
       }
     }
+
+    public string Email
+    {
+      get { return email; }
+      set
+      {
+        if (value == email) return;
+        email = value;
+        NotifyOfPropertyChange(() => Email);
+      }
+    }
   }
 
   public sealed class UserCreator : IDataCreator<User>
@@ -27,6 +39,7 @@ namespace HrPortal.Service.Core.Entities
       var data = new User();
       data.ID = reader["guid"].ToString();
       data.Name = reader["userName"].ToString();
+      data.Email = reader["email"].ToString();
       return data;
     }
   }

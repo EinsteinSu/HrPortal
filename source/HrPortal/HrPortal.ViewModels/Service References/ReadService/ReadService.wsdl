@@ -6,6 +6,12 @@
       <xsd:import schemaLocation="http://localhost:26398/ReadService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
     </xsd:schema>
   </wsdl:types>
+  <wsdl:message name="IReadService_GetEnterpriseUserJson_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEnterpriseUserJson" />
+  </wsdl:message>
+  <wsdl:message name="IReadService_GetEnterpriseUserJson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEnterpriseUserJsonResponse" />
+  </wsdl:message>
   <wsdl:message name="IReadService_GetRequirements_InputMessage">
     <wsdl:part name="parameters" element="tns:GetRequirements" />
   </wsdl:message>
@@ -24,7 +30,17 @@
   <wsdl:message name="IReadService_GetDownloads_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetDownloadsResponse" />
   </wsdl:message>
+  <wsdl:message name="IReadService_GetComments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComments" />
+  </wsdl:message>
+  <wsdl:message name="IReadService_GetComments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCommentsResponse" />
+  </wsdl:message>
   <wsdl:portType name="IReadService">
+    <wsdl:operation name="GetEnterpriseUserJson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReadService/GetEnterpriseUserJson" message="tns:IReadService_GetEnterpriseUserJson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReadService/GetEnterpriseUserJsonResponse" message="tns:IReadService_GetEnterpriseUserJson_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="GetRequirements">
       <wsdl:input wsaw:Action="http://tempuri.org/IReadService/GetRequirements" message="tns:IReadService_GetRequirements_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IReadService/GetRequirementsResponse" message="tns:IReadService_GetRequirements_OutputMessage" />
@@ -37,9 +53,22 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IReadService/GetDownloads" message="tns:IReadService_GetDownloads_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IReadService/GetDownloadsResponse" message="tns:IReadService_GetDownloads_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="GetComments">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReadService/GetComments" message="tns:IReadService_GetComments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReadService/GetCommentsResponse" message="tns:IReadService_GetComments_OutputMessage" />
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="readEndPoint" type="tns:IReadService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetEnterpriseUserJson">
+      <soap:operation soapAction="http://tempuri.org/IReadService/GetEnterpriseUserJson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetRequirements">
       <soap:operation soapAction="http://tempuri.org/IReadService/GetRequirements" style="document" />
       <wsdl:input>
@@ -60,6 +89,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetDownloads">
       <soap:operation soapAction="http://tempuri.org/IReadService/GetDownloads" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComments">
+      <soap:operation soapAction="http://tempuri.org/IReadService/GetComments" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

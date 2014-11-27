@@ -1,10 +1,10 @@
-namespace HrPortal.Service.Core.Entities.Parameters
+﻿namespace HrPortal.Service.Core.Entities.Parameters
 {
   public enum Category
   {
-    Defect,
-    Story,
-    Enhancement,
-    BussinessLogical
+    系统缺陷,
+    功能调整,
+    功能增强,
+    业务逻辑变更
   }
 }
