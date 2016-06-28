@@ -16,7 +16,7 @@ namespace HrPortal.Service.Core
           var builder = new SqlConnectionStringBuilder
           {
             InitialCatalog = "Requierments",
-            DataSource = "116.54.125.122",
+            DataSource = "182.247.229.116",
             UserID = "sa",
             Password = "hrmaster"
           };

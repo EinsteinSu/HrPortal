@@ -6,77 +6,77 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\Einstein\Desktop\Releases\HrpPortal</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\Sue\Projects\Release\HrPortal</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Caliburn.Micro.dll">
-      <publishTime>03/26/2014 16:56:53</publishTime>
+      <publishTime>06/16/2016 18:56:18</publishTime>
     </File>
     <File Include="bin/Caliburn.Micro.pdb">
-      <publishTime>03/26/2014 16:59:02</publishTime>
+      <publishTime>06/16/2016 18:56:18</publishTime>
     </File>
     <File Include="bin/HrPortal.Service.Core.dll">
-      <publishTime>11/15/2014 15:53:26</publishTime>
+      <publishTime>06/29/2016 07:47:25</publishTime>
     </File>
     <File Include="bin/HrPortal.Service.Core.pdb">
-      <publishTime>11/15/2014 15:53:26</publishTime>
+      <publishTime>06/29/2016 07:34:21</publishTime>
     </File>
     <File Include="bin/HrPortal.Service.dll">
-      <publishTime>11/15/2014 15:53:27</publishTime>
+      <publishTime>06/29/2016 07:47:25</publishTime>
     </File>
     <File Include="bin/HrPortal.Service.pdb">
-      <publishTime>11/15/2014 15:53:27</publishTime>
+      <publishTime>06/29/2016 07:34:21</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>03/26/2014 16:56:54</publishTime>
+      <publishTime>06/16/2016 18:56:23</publishTime>
     </File>
     <File Include="bin/Supeng.Common.dll">
-      <publishTime>11/15/2014 12:50:53</publishTime>
+      <publishTime>06/24/2016 08:08:33</publishTime>
     </File>
     <File Include="bin/Supeng.Common.pdb">
-      <publishTime>11/15/2014 12:50:53</publishTime>
+      <publishTime>06/24/2016 08:08:33</publishTime>
     </File>
     <File Include="bin/Supeng.Data.dll">
-      <publishTime>11/15/2014 12:50:53</publishTime>
+      <publishTime>06/24/2016 08:08:33</publishTime>
     </File>
     <File Include="bin/Supeng.Data.pdb">
-      <publishTime>11/15/2014 12:50:53</publishTime>
+      <publishTime>06/24/2016 08:08:33</publishTime>
     </File>
     <File Include="bin/Supeng.Data.Sql.dll">
-      <publishTime>11/15/2014 10:45:07</publishTime>
+      <publishTime>06/24/2016 08:08:34</publishTime>
     </File>
     <File Include="bin/Supeng.Data.Sql.pdb">
-      <publishTime>11/15/2014 10:45:07</publishTime>
+      <publishTime>06/24/2016 08:08:34</publishTime>
     </File>
     <File Include="bin/Supeng.Email.dll">
-      <publishTime>11/15/2014 10:45:15</publishTime>
+      <publishTime>06/24/2016 08:08:33</publishTime>
     </File>
     <File Include="bin/Supeng.Email.pdb">
-      <publishTime>11/15/2014 10:45:15</publishTime>
+      <publishTime>06/24/2016 08:08:33</publishTime>
     </File>
     <File Include="bin/System.Windows.Interactivity.dll">
-      <publishTime>03/26/2014 16:56:53</publishTime>
+      <publishTime>06/16/2016 18:56:21</publishTime>
     </File>
     <File Include="ClientBin/HrPortal.xap">
-      <publishTime>11/15/2014 15:51:50</publishTime>
+      <publishTime>06/29/2016 07:34:33</publishTime>
     </File>
     <File Include="HrPortalTestPage.aspx">
-      <publishTime>08/01/2014 23:34:30</publishTime>
+      <publishTime>06/29/2016 07:28:02</publishTime>
     </File>
     <File Include="HrPortalTestPage.html">
-      <publishTime>08/01/2014 23:34:30</publishTime>
+      <publishTime>06/29/2016 07:28:02</publishTime>
     </File>
     <File Include="ReadService.svc">
-      <publishTime>08/01/2014 18:34:37</publishTime>
+      <publishTime>06/29/2016 07:28:02</publishTime>
     </File>
     <File Include="Silverlight.js">
-      <publishTime>08/01/2014 18:34:37</publishTime>
+      <publishTime>06/29/2016 07:28:02</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/15/2014 16:05:01</publishTime>
+      <publishTime>06/29/2016 07:41:30</publishTime>
     </File>
     <File Include="WriteService.svc">
-      <publishTime>08/01/2014 21:34:10</publishTime>
+      <publishTime>06/29/2016 07:28:02</publishTime>
     </File>
   </ItemGroup>
 </Project>
