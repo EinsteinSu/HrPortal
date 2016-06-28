@@ -1,2 +1,2 @@
-C:\Users\Einstein\Desktop\HrPortal\source\HrPortal\HrPortal
+C:\Users\Sue\Projects\HrPortal\source\HrPortal\HrPortal
 Generated_Code\HrPortal.Service.g.cs

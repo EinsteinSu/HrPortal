@@ -1,2 +1,2 @@
-C:\Users\Einstein\Desktop\HrPortal\source\HrPortal\HrPortal.ViewModels\HrPortal.ViewModels.csproj,635443946332990475,
-C:\Users\Einstein\Desktop\HrPortal\source\HrPortal\HrPortal.Views\HrPortal.Views.csproj,635444976407058080,
+C:\Users\Sue\Projects\HrPortal\source\HrPortal\HrPortal.ViewModels\HrPortal.ViewModels.csproj,636027820829441162,
+C:\Users\Sue\Projects\HrPortal\source\HrPortal\HrPortal.Views\HrPortal.Views.csproj,636027820853978352,
